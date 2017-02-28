@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		651EC9E01E62262400E6A186 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651EC9DE1E62262400E6A186 /* FirstViewController.swift */; };
+		651EC9E11E62262400E6A186 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651EC9DF1E62262400E6A186 /* SecondViewController.swift */; };
+		651EC9E31E62263D00E6A186 /* CreateNewEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651EC9E21E62263D00E6A186 /* CreateNewEventVC.swift */; };
+		6540F5971E62FCDB00BD79B1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6540F5961E62FCDB00BD79B1 /* CoreData.framework */; };
+		656F9D521E61C9550048369D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656F9D511E61C9550048369D /* AppDelegate.swift */; };
+		656F9D591E61C9550048369D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 656F9D571E61C9550048369D /* Main.storyboard */; };
+		656F9D5B1E61C9550048369D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 656F9D5A1E61C9550048369D /* Assets.xcassets */; };
+		656F9D5E1E61C9550048369D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 656F9D5C1E61C9550048369D /* LaunchScreen.storyboard */; };
+		656F9D691E61C9550048369D /* FormidableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656F9D681E61C9550048369D /* FormidableTests.swift */; };
+		656F9D741E61C9550048369D /* FormidableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656F9D731E61C9550048369D /* FormidableUITests.swift */; };
+		65FFA4281E6303E400199117 /* Formidable.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65FFA4261E6303E400199117 /* Formidable.xcdatamodeld */; };
+		65FFA42B1E63045B00199117 /* Events+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FFA4291E63045B00199117 /* Events+CoreDataClass.swift */; };
+		65FFA42C1E63045B00199117 /* Events+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FFA42A1E63045B00199117 /* Events+CoreDataProperties.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		656F9D651E61C9550048369D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 656F9D461E61C9550048369D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 656F9D4D1E61C9550048369D;
+			remoteInfo = Formidable;
+		};
+		656F9D701E61C9550048369D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 656F9D461E61C9550048369D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 656F9D4D1E61C9550048369D;
+			remoteInfo = Formidable;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		651EC9DE1E62262400E6A186 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirstViewController.swift; path = Controllers/FirstViewController.swift; sourceTree = "<group>"; };
+		651EC9DF1E62262400E6A186 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = Controllers/SecondViewController.swift; sourceTree = "<group>"; };
+		651EC9E21E62263D00E6A186 /* CreateNewEventVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateNewEventVC.swift; path = Controllers/CreateNewEventVC.swift; sourceTree = "<group>"; };
+		6540F5961E62FCDB00BD79B1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		656F9D4E1E61C9550048369D /* Formidable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Formidable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		656F9D511E61C9550048369D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		656F9D581E61C9550048369D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		656F9D5A1E61C9550048369D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		656F9D5D1E61C9550048369D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		656F9D5F1E61C9550048369D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		656F9D641E61C9550048369D /* FormidableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FormidableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		656F9D681E61C9550048369D /* FormidableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormidableTests.swift; sourceTree = "<group>"; };
+		656F9D6A1E61C9550048369D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		656F9D6F1E61C9550048369D /* FormidableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FormidableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		656F9D731E61C9550048369D /* FormidableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormidableUITests.swift; sourceTree = "<group>"; };
+		656F9D751E61C9550048369D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65FFA4271E6303E400199117 /* Formidable.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Formidable.xcdatamodel; sourceTree = "<group>"; };
+		65FFA4291E63045B00199117 /* Events+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Events+CoreDataClass.swift"; path = "Model/Events+CoreDataClass.swift"; sourceTree = "<group>"; };
+		65FFA42A1E63045B00199117 /* Events+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Events+CoreDataProperties.swift"; path = "Model/Events+CoreDataProperties.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		656F9D4B1E61C9550048369D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6540F5971E62FCDB00BD79B1 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		656F9D611E61C9550048369D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		656F9D6C1E61C9550048369D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		651EC9DD1E62260100E6A186 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				651EC9DE1E62262400E6A186 /* FirstViewController.swift */,
+				651EC9DF1E62262400E6A186 /* SecondViewController.swift */,
+				651EC9E21E62263D00E6A186 /* CreateNewEventVC.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		6540F5951E62FCDB00BD79B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6540F5961E62FCDB00BD79B1 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6540F59E1E63017500BD79B1 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		6545C69B1E62ECB400DFA52E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				65FFA4291E63045B00199117 /* Events+CoreDataClass.swift */,
+				65FFA42A1E63045B00199117 /* Events+CoreDataProperties.swift */,
+				65FFA4261E6303E400199117 /* Formidable.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		656F9D451E61C9550048369D = {
+			isa = PBXGroup;
+			children = (
+				656F9D501E61C9550048369D /* Formidable */,
+				656F9D671E61C9550048369D /* FormidableTests */,
+				656F9D721E61C9550048369D /* FormidableUITests */,
+				656F9D4F1E61C9550048369D /* Products */,
+				6540F5951E62FCDB00BD79B1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		656F9D4F1E61C9550048369D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				656F9D4E1E61C9550048369D /* Formidable.app */,
+				656F9D641E61C9550048369D /* FormidableTests.xctest */,
+				656F9D6F1E61C9550048369D /* FormidableUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		656F9D501E61C9550048369D /* Formidable */ = {
+			isa = PBXGroup;
+			children = (
+				6540F59E1E63017500BD79B1 /* Entities */,
+				656F9D511E61C9550048369D /* AppDelegate.swift */,
+				6545C69B1E62ECB400DFA52E /* Model */,
+				651EC9DD1E62260100E6A186 /* Controllers */,
+				656F9D571E61C9550048369D /* Main.storyboard */,
+				656F9D5A1E61C9550048369D /* Assets.xcassets */,
+				656F9D5C1E61C9550048369D /* LaunchScreen.storyboard */,
+				656F9D5F1E61C9550048369D /* Info.plist */,
+			);
+			path = Formidable;
+			sourceTree = "<group>";
+		};
+		656F9D671E61C9550048369D /* FormidableTests */ = {
+			isa = PBXGroup;
+			children = (
+				656F9D681E61C9550048369D /* FormidableTests.swift */,
+				656F9D6A1E61C9550048369D /* Info.plist */,
+			);
+			path = FormidableTests;
+			sourceTree = "<group>";
+		};
+		656F9D721E61C9550048369D /* FormidableUITests */ = {
+			isa = PBXGroup;
+			children = (
+				656F9D731E61C9550048369D /* FormidableUITests.swift */,
+				656F9D751E61C9550048369D /* Info.plist */,
+			);
+			path = FormidableUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		656F9D4D1E61C9550048369D /* Formidable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 656F9D781E61C9550048369D /* Build configuration list for PBXNativeTarget "Formidable" */;
+			buildPhases = (
+				656F9D4A1E61C9550048369D /* Sources */,
+				656F9D4B1E61C9550048369D /* Frameworks */,
+				656F9D4C1E61C9550048369D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Formidable;
+			productName = Formidable;
+			productReference = 656F9D4E1E61C9550048369D /* Formidable.app */;
+			productType = "com.apple.product-type.application";
+		};
+		656F9D631E61C9550048369D /* FormidableTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 656F9D7B1E61C9550048369D /* Build configuration list for PBXNativeTarget "FormidableTests" */;
+			buildPhases = (
+				656F9D601E61C9550048369D /* Sources */,
+				656F9D611E61C9550048369D /* Frameworks */,
+				656F9D621E61C9550048369D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				656F9D661E61C9550048369D /* PBXTargetDependency */,
+			);
+			name = FormidableTests;
+			productName = FormidableTests;
+			productReference = 656F9D641E61C9550048369D /* FormidableTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		656F9D6E1E61C9550048369D /* FormidableUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 656F9D7E1E61C9550048369D /* Build configuration list for PBXNativeTarget "FormidableUITests" */;
+			buildPhases = (
+				656F9D6B1E61C9550048369D /* Sources */,
+				656F9D6C1E61C9550048369D /* Frameworks */,
+				656F9D6D1E61C9550048369D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				656F9D711E61C9550048369D /* PBXTargetDependency */,
+			);
+			name = FormidableUITests;
+			productName = FormidableUITests;
+			productReference = 656F9D6F1E61C9550048369D /* FormidableUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		656F9D461E61C9550048369D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Shashi;
+				TargetAttributes = {
+					656F9D4D1E61C9550048369D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = B2KZPMR7GT;
+						ProvisioningStyle = Automatic;
+					};
+					656F9D631E61C9550048369D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = B2KZPMR7GT;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 656F9D4D1E61C9550048369D;
+					};
+					656F9D6E1E61C9550048369D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = B2KZPMR7GT;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 656F9D4D1E61C9550048369D;
+					};
+				};
+			};
+			buildConfigurationList = 656F9D491E61C9550048369D /* Build configuration list for PBXProject "Formidable" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 656F9D451E61C9550048369D;
+			productRefGroup = 656F9D4F1E61C9550048369D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				656F9D4D1E61C9550048369D /* Formidable */,
+				656F9D631E61C9550048369D /* FormidableTests */,
+				656F9D6E1E61C9550048369D /* FormidableUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		656F9D4C1E61C9550048369D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				656F9D5E1E61C9550048369D /* LaunchScreen.storyboard in Resources */,
+				656F9D5B1E61C9550048369D /* Assets.xcassets in Resources */,
+				656F9D591E61C9550048369D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		656F9D621E61C9550048369D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		656F9D6D1E61C9550048369D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		656F9D4A1E61C9550048369D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65FFA42B1E63045B00199117 /* Events+CoreDataClass.swift in Sources */,
+				656F9D521E61C9550048369D /* AppDelegate.swift in Sources */,
+				65FFA4281E6303E400199117 /* Formidable.xcdatamodeld in Sources */,
+				651EC9E11E62262400E6A186 /* SecondViewController.swift in Sources */,
+				65FFA42C1E63045B00199117 /* Events+CoreDataProperties.swift in Sources */,
+				651EC9E01E62262400E6A186 /* FirstViewController.swift in Sources */,
+				651EC9E31E62263D00E6A186 /* CreateNewEventVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		656F9D601E61C9550048369D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				656F9D691E61C9550048369D /* FormidableTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		656F9D6B1E61C9550048369D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				656F9D741E61C9550048369D /* FormidableUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		656F9D661E61C9550048369D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 656F9D4D1E61C9550048369D /* Formidable */;
+			targetProxy = 656F9D651E61C9550048369D /* PBXContainerItemProxy */;
+		};
+		656F9D711E61C9550048369D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 656F9D4D1E61C9550048369D /* Formidable */;
+			targetProxy = 656F9D701E61C9550048369D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		656F9D571E61C9550048369D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				656F9D581E61C9550048369D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		656F9D5C1E61C9550048369D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				656F9D5D1E61C9550048369D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		656F9D761E61C9550048369D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = B2KZPMR7GT;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		656F9D771E61C9550048369D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = B2KZPMR7GT;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		656F9D791E61C9550048369D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEVELOPMENT_TEAM = B2KZPMR7GT;
+				INFOPLIST_FILE = Formidable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.apps.Formidable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		656F9D7A1E61C9550048369D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEVELOPMENT_TEAM = B2KZPMR7GT;
+				INFOPLIST_FILE = Formidable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.apps.Formidable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		656F9D7C1E61C9550048369D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = B2KZPMR7GT;
+				INFOPLIST_FILE = FormidableTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = shashi.ios.apps.FormidableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Formidable.app/Formidable";
+			};
+			name = Debug;
+		};
+		656F9D7D1E61C9550048369D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = B2KZPMR7GT;
+				INFOPLIST_FILE = FormidableTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = shashi.ios.apps.FormidableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Formidable.app/Formidable";
+			};
+			name = Release;
+		};
+		656F9D7F1E61C9550048369D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = B2KZPMR7GT;
+				INFOPLIST_FILE = FormidableUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = shashi.ios.apps.FormidableUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Formidable;
+			};
+			name = Debug;
+		};
+		656F9D801E61C9550048369D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = B2KZPMR7GT;
+				INFOPLIST_FILE = FormidableUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = shashi.ios.apps.FormidableUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Formidable;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		656F9D491E61C9550048369D /* Build configuration list for PBXProject "Formidable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				656F9D761E61C9550048369D /* Debug */,
+				656F9D771E61C9550048369D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		656F9D781E61C9550048369D /* Build configuration list for PBXNativeTarget "Formidable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				656F9D791E61C9550048369D /* Debug */,
+				656F9D7A1E61C9550048369D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		656F9D7B1E61C9550048369D /* Build configuration list for PBXNativeTarget "FormidableTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				656F9D7C1E61C9550048369D /* Debug */,
+				656F9D7D1E61C9550048369D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		656F9D7E1E61C9550048369D /* Build configuration list for PBXNativeTarget "FormidableUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				656F9D7F1E61C9550048369D /* Debug */,
+				656F9D801E61C9550048369D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		65FFA4261E6303E400199117 /* Formidable.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				65FFA4271E6303E400199117 /* Formidable.xcdatamodel */,
+			);
+			currentVersion = 65FFA4271E6303E400199117 /* Formidable.xcdatamodel */;
+			name = Formidable.xcdatamodeld;
+			path = Model/Formidable.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 656F9D461E61C9550048369D /* Project object */;
+}
