@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23CC8348CA0DE3A7C3D02421 /* Pods_FormidableUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E1E97920BE68A20C889A18C /* Pods_FormidableUITests.framework */; };
 		651EC9E01E62262400E6A186 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651EC9DE1E62262400E6A186 /* FirstViewController.swift */; };
 		651EC9E11E62262400E6A186 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651EC9DF1E62262400E6A186 /* SecondViewController.swift */; };
 		651EC9E31E62263D00E6A186 /* CreateNewEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651EC9E21E62263D00E6A186 /* CreateNewEventVC.swift */; };
 		6540F5971E62FCDB00BD79B1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6540F5961E62FCDB00BD79B1 /* CoreData.framework */; };
+		655604891E680E1B00436F8C /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655604881E680E1B00436F8C /* ErrorView.swift */; };
+		6556048C1E680E4500436F8C /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6556048B1E680E4500436F8C /* ErrorView.xib */; };
+		6556048E1E680F4E00436F8C /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6556048D1E680F4E00436F8C /* Shared.swift */; };
+		655A44571E6B3099001F8C26 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655A44561E6B3099001F8C26 /* CoreDataHelper.swift */; };
 		656F9D521E61C9550048369D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656F9D511E61C9550048369D /* AppDelegate.swift */; };
 		656F9D591E61C9550048369D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 656F9D571E61C9550048369D /* Main.storyboard */; };
 		656F9D5B1E61C9550048369D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 656F9D5A1E61C9550048369D /* Assets.xcassets */; };
@@ -20,6 +25,8 @@
 		65FFA4281E6303E400199117 /* Formidable.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65FFA4261E6303E400199117 /* Formidable.xcdatamodeld */; };
 		65FFA42B1E63045B00199117 /* Events+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FFA4291E63045B00199117 /* Events+CoreDataClass.swift */; };
 		65FFA42C1E63045B00199117 /* Events+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FFA42A1E63045B00199117 /* Events+CoreDataProperties.swift */; };
+		BD6A7A6D8C79D52B8D2393F7 /* Pods_Formidable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A620A02F15E9C0268415CFED /* Pods_Formidable.framework */; };
+		FA59DD5359692C7688BE0B39 /* Pods_FormidableTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C2CC4313EC582AC6CE83EA /* Pods_FormidableTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +47,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2154B0A31433FBE1A37D6128 /* Pods-FormidableTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FormidableTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FormidableTests/Pods-FormidableTests.release.xcconfig"; sourceTree = "<group>"; };
+		5E9604D5D45C0AA4641ED4DF /* Pods-Formidable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Formidable.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Formidable/Pods-Formidable.debug.xcconfig"; sourceTree = "<group>"; };
 		651EC9DE1E62262400E6A186 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirstViewController.swift; path = Controllers/FirstViewController.swift; sourceTree = "<group>"; };
 		651EC9DF1E62262400E6A186 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = Controllers/SecondViewController.swift; sourceTree = "<group>"; };
 		651EC9E21E62263D00E6A186 /* CreateNewEventVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateNewEventVC.swift; path = Controllers/CreateNewEventVC.swift; sourceTree = "<group>"; };
 		6540F5961E62FCDB00BD79B1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		655604881E680E1B00436F8C /* ErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ErrorView.swift; path = Views/ErrorView.swift; sourceTree = "<group>"; };
+		6556048B1E680E4500436F8C /* ErrorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ErrorView.xib; path = Views/ErrorView.xib; sourceTree = "<group>"; };
+		6556048D1E680F4E00436F8C /* Shared.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Shared.swift; path = SupportFiles/Shared.swift; sourceTree = "<group>"; };
+		655A44561E6B3099001F8C26 /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataHelper.swift; path = SupportFiles/CoreDataHelper.swift; sourceTree = "<group>"; };
 		656F9D4E1E61C9550048369D /* Formidable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Formidable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		656F9D511E61C9550048369D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		656F9D581E61C9550048369D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,6 +72,13 @@
 		65FFA4271E6303E400199117 /* Formidable.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Formidable.xcdatamodel; sourceTree = "<group>"; };
 		65FFA4291E63045B00199117 /* Events+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Events+CoreDataClass.swift"; path = "Model/Events+CoreDataClass.swift"; sourceTree = "<group>"; };
 		65FFA42A1E63045B00199117 /* Events+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Events+CoreDataProperties.swift"; path = "Model/Events+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6E1E97920BE68A20C889A18C /* Pods_FormidableUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FormidableUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BE991117DC05021726BAC12 /* Pods-FormidableTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FormidableTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FormidableTests/Pods-FormidableTests.debug.xcconfig"; sourceTree = "<group>"; };
+		850A83020A8E441762D4777B /* Pods-FormidableUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FormidableUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FormidableUITests/Pods-FormidableUITests.release.xcconfig"; sourceTree = "<group>"; };
+		95C2CC4313EC582AC6CE83EA /* Pods_FormidableTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FormidableTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A620A02F15E9C0268415CFED /* Pods_Formidable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Formidable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2D223390D0D75223C071A48 /* Pods-Formidable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Formidable.release.xcconfig"; path = "Pods/Target Support Files/Pods-Formidable/Pods-Formidable.release.xcconfig"; sourceTree = "<group>"; };
+		D3794F0CAE0A64B00ADD599D /* Pods-FormidableUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FormidableUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FormidableUITests/Pods-FormidableUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +87,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6540F5971E62FCDB00BD79B1 /* CoreData.framework in Frameworks */,
+				BD6A7A6D8C79D52B8D2393F7 /* Pods_Formidable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA59DD5359692C7688BE0B39 /* Pods_FormidableTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23CC8348CA0DE3A7C3D02421 /* Pods_FormidableUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +124,9 @@
 			isa = PBXGroup;
 			children = (
 				6540F5961E62FCDB00BD79B1 /* CoreData.framework */,
+				A620A02F15E9C0268415CFED /* Pods_Formidable.framework */,
+				95C2CC4313EC582AC6CE83EA /* Pods_FormidableTests.framework */,
+				6E1E97920BE68A20C889A18C /* Pods_FormidableUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -122,6 +148,33 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		655604861E680D9F00436F8C /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				656F9D5A1E61C9550048369D /* Assets.xcassets */,
+				656F9D5C1E61C9550048369D /* LaunchScreen.storyboard */,
+				656F9D571E61C9550048369D /* Main.storyboard */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+		655604871E680DD100436F8C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6556048A1E680E2B00436F8C /* ErrorView */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		6556048A1E680E2B00436F8C /* ErrorView */ = {
+			isa = PBXGroup;
+			children = (
+				655604881E680E1B00436F8C /* ErrorView.swift */,
+				6556048B1E680E4500436F8C /* ErrorView.xib */,
+			);
+			name = ErrorView;
+			sourceTree = "<group>";
+		};
 		656F9D451E61C9550048369D = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +183,7 @@
 				656F9D721E61C9550048369D /* FormidableUITests */,
 				656F9D4F1E61C9550048369D /* Products */,
 				6540F5951E62FCDB00BD79B1 /* Frameworks */,
+				DC64F2988A46C3E3AC978842 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,13 +200,13 @@
 		656F9D501E61C9550048369D /* Formidable */ = {
 			isa = PBXGroup;
 			children = (
-				6540F59E1E63017500BD79B1 /* Entities */,
 				656F9D511E61C9550048369D /* AppDelegate.swift */,
 				6545C69B1E62ECB400DFA52E /* Model */,
+				655604871E680DD100436F8C /* Views */,
 				651EC9DD1E62260100E6A186 /* Controllers */,
-				656F9D571E61C9550048369D /* Main.storyboard */,
-				656F9D5A1E61C9550048369D /* Assets.xcassets */,
-				656F9D5C1E61C9550048369D /* LaunchScreen.storyboard */,
+				655604861E680D9F00436F8C /* Interface */,
+				658970F11E66B097005CD622 /* SupportFiles */,
+				6540F59E1E63017500BD79B1 /* Entities */,
 				656F9D5F1E61C9550048369D /* Info.plist */,
 			);
 			path = Formidable;
@@ -176,6 +230,28 @@
 			path = FormidableUITests;
 			sourceTree = "<group>";
 		};
+		658970F11E66B097005CD622 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				655A44561E6B3099001F8C26 /* CoreDataHelper.swift */,
+				6556048D1E680F4E00436F8C /* Shared.swift */,
+			);
+			name = SupportFiles;
+			sourceTree = "<group>";
+		};
+		DC64F2988A46C3E3AC978842 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E9604D5D45C0AA4641ED4DF /* Pods-Formidable.debug.xcconfig */,
+				B2D223390D0D75223C071A48 /* Pods-Formidable.release.xcconfig */,
+				7BE991117DC05021726BAC12 /* Pods-FormidableTests.debug.xcconfig */,
+				2154B0A31433FBE1A37D6128 /* Pods-FormidableTests.release.xcconfig */,
+				D3794F0CAE0A64B00ADD599D /* Pods-FormidableUITests.debug.xcconfig */,
+				850A83020A8E441762D4777B /* Pods-FormidableUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -183,9 +259,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 656F9D781E61C9550048369D /* Build configuration list for PBXNativeTarget "Formidable" */;
 			buildPhases = (
+				45F7B011B465620512B1543A /* [CP] Check Pods Manifest.lock */,
 				656F9D4A1E61C9550048369D /* Sources */,
 				656F9D4B1E61C9550048369D /* Frameworks */,
 				656F9D4C1E61C9550048369D /* Resources */,
+				E9110657BC59C17FB58279C3 /* [CP] Embed Pods Frameworks */,
+				1D9269924A5E22D6E7C060E9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -200,9 +279,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 656F9D7B1E61C9550048369D /* Build configuration list for PBXNativeTarget "FormidableTests" */;
 			buildPhases = (
+				94A0DF007612670BD6A71C4F /* [CP] Check Pods Manifest.lock */,
 				656F9D601E61C9550048369D /* Sources */,
 				656F9D611E61C9550048369D /* Frameworks */,
 				656F9D621E61C9550048369D /* Resources */,
+				925933EA85A177B57D58701D /* [CP] Embed Pods Frameworks */,
+				01B8662B2022A6B7F7443CA0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -218,9 +300,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 656F9D7E1E61C9550048369D /* Build configuration list for PBXNativeTarget "FormidableUITests" */;
 			buildPhases = (
+				4732360E41A29E552C8EFA21 /* [CP] Check Pods Manifest.lock */,
 				656F9D6B1E61C9550048369D /* Sources */,
 				656F9D6C1E61C9550048369D /* Frameworks */,
 				656F9D6D1E61C9550048369D /* Resources */,
+				928A2BEEFE8AFDE857C28322 /* [CP] Embed Pods Frameworks */,
+				827BC7E6BA55D90AE17B1628 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -289,6 +374,7 @@
 				656F9D5E1E61C9550048369D /* LaunchScreen.storyboard in Resources */,
 				656F9D5B1E61C9550048369D /* Assets.xcassets in Resources */,
 				656F9D591E61C9550048369D /* Main.storyboard in Resources */,
+				6556048C1E680E4500436F8C /* ErrorView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,18 +394,159 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		01B8662B2022A6B7F7443CA0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FormidableTests/Pods-FormidableTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1D9269924A5E22D6E7C060E9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Formidable/Pods-Formidable-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45F7B011B465620512B1543A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4732360E41A29E552C8EFA21 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		827BC7E6BA55D90AE17B1628 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FormidableUITests/Pods-FormidableUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		925933EA85A177B57D58701D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FormidableTests/Pods-FormidableTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		928A2BEEFE8AFDE857C28322 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FormidableUITests/Pods-FormidableUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94A0DF007612670BD6A71C4F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E9110657BC59C17FB58279C3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Formidable/Pods-Formidable-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		656F9D4A1E61C9550048369D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				655A44571E6B3099001F8C26 /* CoreDataHelper.swift in Sources */,
 				65FFA42B1E63045B00199117 /* Events+CoreDataClass.swift in Sources */,
 				656F9D521E61C9550048369D /* AppDelegate.swift in Sources */,
 				65FFA4281E6303E400199117 /* Formidable.xcdatamodeld in Sources */,
 				651EC9E11E62262400E6A186 /* SecondViewController.swift in Sources */,
 				65FFA42C1E63045B00199117 /* Events+CoreDataProperties.swift in Sources */,
 				651EC9E01E62262400E6A186 /* FirstViewController.swift in Sources */,
+				6556048E1E680F4E00436F8C /* Shared.swift in Sources */,
 				651EC9E31E62263D00E6A186 /* CreateNewEventVC.swift in Sources */,
+				655604891E680E1B00436F8C /* ErrorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +700,7 @@
 		};
 		656F9D791E61C9550048369D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E9604D5D45C0AA4641ED4DF /* Pods-Formidable.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -488,6 +716,7 @@
 		};
 		656F9D7A1E61C9550048369D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2D223390D0D75223C071A48 /* Pods-Formidable.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -503,6 +732,7 @@
 		};
 		656F9D7C1E61C9550048369D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BE991117DC05021726BAC12 /* Pods-FormidableTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -518,6 +748,7 @@
 		};
 		656F9D7D1E61C9550048369D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2154B0A31433FBE1A37D6128 /* Pods-FormidableTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -533,6 +764,7 @@
 		};
 		656F9D7F1E61C9550048369D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3794F0CAE0A64B00ADD599D /* Pods-FormidableUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = B2KZPMR7GT;
@@ -547,6 +779,7 @@
 		};
 		656F9D801E61C9550048369D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 850A83020A8E441762D4777B /* Pods-FormidableUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = B2KZPMR7GT;

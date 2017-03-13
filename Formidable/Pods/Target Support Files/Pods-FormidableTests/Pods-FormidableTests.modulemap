@@ -1,0 +1,6 @@
+framework module Pods_FormidableTests {
+  umbrella header "Pods-FormidableTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

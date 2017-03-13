@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ErrorView" id="iN0-l3-epB" customClass="ErrorView" customModule="Formidable" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please kjgh" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hne-Dx-4Qw">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                    <color key="textColor" red="0.69019607839999997" green="0.15686274510000001" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.12941176469999999" green="0.12941176469999999" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+            <accessibility key="accessibilityConfiguration" identifier="ErrorView"/>
+            <constraints>
+                <constraint firstItem="hne-Dx-4Qw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3Ef-x2-1TM"/>
+                <constraint firstAttribute="bottom" secondItem="hne-Dx-4Qw" secondAttribute="bottom" id="Llk-zN-fG2"/>
+                <constraint firstAttribute="trailing" secondItem="hne-Dx-4Qw" secondAttribute="trailing" id="WFz-JL-5yq"/>
+                <constraint firstItem="hne-Dx-4Qw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fcV-vk-XaB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lblError" destination="hne-Dx-4Qw" id="CVd-7a-uQA"/>
+            </connections>
+            <point key="canvasLocation" x="18.5" y="183"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,852 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04D3992C3E3ABB21025439FB8FFADBB2 /* Pods-FormidableUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 64519B5B3A116188A56CEC8D97077609 /* Pods-FormidableUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10FC62C66CF81354448F15DD6BC77B1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		15966BE120B4676B5793AB92D702DB7A /* Pods-Formidable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CC2ACFCFDE15C173F6B367AC79053E /* Pods-Formidable-dummy.m */; };
+		3E342F35FB48F1D83B5D60CAFB9BDD0E /* Pods-FormidableUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE3CE7A9FC69E31909A2DFDBDD1E725 /* Pods-FormidableUITests-dummy.m */; };
+		9ADCF1530D34A946317D4229D4627EE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		ACC1A013EBBC8170D178A88BFE5352CF /* Pods-Formidable-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1FA5F32200C957EFCD2612D28224700 /* Pods-Formidable-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4FD42E24DE3AA1F1898F67DFDA9CACD /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB6AF7BE4547CE64DE5711633CFFC0 /* SkyFloatingLabelTextFieldWithIcon.swift */; };
+		B5F64F7CC60EE6ECC3C117B22B039C12 /* SkyFloatingLabelTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3998D604C4194CAA0ABE4BC6A6FD0608 /* SkyFloatingLabelTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6814D5B7DFE0C775938C9EACEA71B4C /* SkyFloatingLabelTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 856C1FB00B0585E564D3D0EBDE90E4F5 /* SkyFloatingLabelTextField-dummy.m */; };
+		C22A3E9CBF4D16DD2813D977D2D968E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		C2705FEDC69005A2A7E1E7BB5F7ECA06 /* Pods-FormidableTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A205E7D45C26B67613ED49589D27D367 /* Pods-FormidableTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDF3CA52C816698B1D218C658997BAFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		EA39766C0FCB1EF398395FD076B5024A /* UITextField+fixCaretPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEECCA755E56BD7670ACA5B8FDE8C49 /* UITextField+fixCaretPosition.swift */; };
+		EAD5C0CD0AADB0470BED2E106396D630 /* SkyFloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2FD3B444C15779258A1E4254154328 /* SkyFloatingLabelTextField.swift */; };
+		F3A2304B6B98B9B8A78A6F50EBFBA644 /* Pods-FormidableTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A66713595C8A1D2821B88209E27D18BF /* Pods-FormidableTests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		87ECC8222964291C7963AE1D3AF2A8DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7493C9EA4596B1D724BC7901B20EDDD;
+			remoteInfo = SkyFloatingLabelTextField;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0FE3CE7A9FC69E31909A2DFDBDD1E725 /* Pods-FormidableUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FormidableUITests-dummy.m"; sourceTree = "<group>"; };
+		10A9D1EE8A97F2F27277493CADA7860B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1315E325FE76C5EF8E4FD720D0816ACB /* Pods-FormidableUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FormidableUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		18AB6AF7BE4547CE64DE5711633CFFC0 /* SkyFloatingLabelTextFieldWithIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextFieldWithIcon.swift; path = Sources/SkyFloatingLabelTextFieldWithIcon.swift; sourceTree = "<group>"; };
+		212B52B1676A4819900A99C4B5BC62ED /* SkyFloatingLabelTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-prefix.pch"; sourceTree = "<group>"; };
+		3998D604C4194CAA0ABE4BC6A6FD0608 /* SkyFloatingLabelTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-umbrella.h"; sourceTree = "<group>"; };
+		3DC4563A06AF9482F4778EA64240CDD2 /* Pods_FormidableTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FormidableTests.framework; path = "Pods-FormidableTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F206C8F8AA959F081B7E8A138ED3B5D /* Pods-Formidable.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Formidable.modulemap"; sourceTree = "<group>"; };
+		41EF479C64A39E65C9955D1023576F14 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47C9E5A771B58D18420E13898741CDB5 /* SkyFloatingLabelTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SkyFloatingLabelTextField.modulemap; sourceTree = "<group>"; };
+		4D7E8690468C251B37E453ACD507CA79 /* Pods-Formidable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Formidable.debug.xcconfig"; sourceTree = "<group>"; };
+		56937A00B69BEAD99F3312023529B582 /* Pods-Formidable-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Formidable-frameworks.sh"; sourceTree = "<group>"; };
+		57EC568DFD8AC544311E1DBC90EDA609 /* Pods-FormidableTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FormidableTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		596DA882889DAEAA6CA774CF80D8C471 /* Pods-FormidableUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FormidableUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5C1090BA19047F83462B1955304F74A3 /* SkyFloatingLabelTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SkyFloatingLabelTextField.framework; path = SkyFloatingLabelTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61E10F0C8C2FCA0570F0C55829362238 /* Pods-FormidableTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FormidableTests-resources.sh"; sourceTree = "<group>"; };
+		64519B5B3A116188A56CEC8D97077609 /* Pods-FormidableUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FormidableUITests-umbrella.h"; sourceTree = "<group>"; };
+		6804FB54F18C5058CCAB97C41F5D7C85 /* SkyFloatingLabelTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SkyFloatingLabelTextField.xcconfig; sourceTree = "<group>"; };
+		75F6D1D021F9DF8BE6B7391861171CE0 /* Pods-Formidable-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Formidable-acknowledgements.plist"; sourceTree = "<group>"; };
+		7ACB07D5F78975321B984F14BE035AC1 /* Pods-FormidableTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-FormidableTests.modulemap"; sourceTree = "<group>"; };
+		7B0FB0DB6AB6A7DCDA9BA6EF4248F891 /* Pods-FormidableTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FormidableTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7C4AFDD0F89E93714295E587DA9B2807 /* Pods-Formidable-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Formidable-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8075BAF4E8F3E301753BBB889BE50EBF /* Pods-FormidableUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-FormidableUITests.modulemap"; sourceTree = "<group>"; };
+		856C1FB00B0585E564D3D0EBDE90E4F5 /* SkyFloatingLabelTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SkyFloatingLabelTextField-dummy.m"; sourceTree = "<group>"; };
+		8784D29E5E05DCA7A4554E931E8007CB /* Pods-FormidableTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FormidableTests-frameworks.sh"; sourceTree = "<group>"; };
+		88CC2ACFCFDE15C173F6B367AC79053E /* Pods-Formidable-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Formidable-dummy.m"; sourceTree = "<group>"; };
+		9335CD4F583EC8929637AC5645714401 /* Pods-FormidableUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FormidableUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1FA5F32200C957EFCD2612D28224700 /* Pods-Formidable-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Formidable-umbrella.h"; sourceTree = "<group>"; };
+		A205E7D45C26B67613ED49589D27D367 /* Pods-FormidableTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FormidableTests-umbrella.h"; sourceTree = "<group>"; };
+		A66713595C8A1D2821B88209E27D18BF /* Pods-FormidableTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FormidableTests-dummy.m"; sourceTree = "<group>"; };
+		AA5072EC79004BAF750FB8E80FE411AD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC7EF86C80735FAFC10EFBE08AFC8A16 /* Pods-FormidableUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FormidableUITests-resources.sh"; sourceTree = "<group>"; };
+		BADC57A4B8A0FD8E5AD8BC69B662A756 /* Pods-FormidableUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FormidableUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CD0FC5126A29956996DBC67B32EA81CD /* Pods-FormidableUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FormidableUITests-frameworks.sh"; sourceTree = "<group>"; };
+		D2946C0054096832B49F17ED03134A3F /* Pods_Formidable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Formidable.framework; path = "Pods-Formidable.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA3CB4DFC3740EA943ACE4AB5610C776 /* Pods-FormidableTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FormidableTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DC2FD3B444C15779258A1E4254154328 /* SkyFloatingLabelTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextField.swift; path = Sources/SkyFloatingLabelTextField.swift; sourceTree = "<group>"; };
+		DFEECCA755E56BD7670ACA5B8FDE8C49 /* UITextField+fixCaretPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextField+fixCaretPosition.swift"; path = "Sources/UITextField+fixCaretPosition.swift"; sourceTree = "<group>"; };
+		F207ACAB3234054885BFCE6A946895FC /* Pods-Formidable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Formidable.release.xcconfig"; sourceTree = "<group>"; };
+		F4ADEA7F9BD0721D0AF2472DC64BBCFD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7607FC766AEC365647F059020B08288 /* Pods-FormidableTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FormidableTests.release.xcconfig"; sourceTree = "<group>"; };
+		F853A8B64B37DB57D83EBF8956FF32E3 /* Pods_FormidableUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FormidableUITests.framework; path = "Pods-FormidableUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDA7F985720A79CCBFD8AC825A06D12B /* Pods-Formidable-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Formidable-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		81E45C512893B7C46DD29DC325C88AC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDF3CA52C816698B1D218C658997BAFD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7D3A22B1ABEB40C0C58B430FEB0C7B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C22A3E9CBF4D16DD2813D977D2D968E7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBA99EA4B2B96145F72F679812B39806 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ADCF1530D34A946317D4229D4627EE3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F90DE7FCE7761384FC024A86253BF3D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10FC62C66CF81354448F15DD6BC77B1B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C8F83CCEF573C773C34D82C14313BF9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4ADEA7F9BD0721D0AF2472DC64BBCFD /* Info.plist */,
+				47C9E5A771B58D18420E13898741CDB5 /* SkyFloatingLabelTextField.modulemap */,
+				6804FB54F18C5058CCAB97C41F5D7C85 /* SkyFloatingLabelTextField.xcconfig */,
+				856C1FB00B0585E564D3D0EBDE90E4F5 /* SkyFloatingLabelTextField-dummy.m */,
+				212B52B1676A4819900A99C4B5BC62ED /* SkyFloatingLabelTextField-prefix.pch */,
+				3998D604C4194CAA0ABE4BC6A6FD0608 /* SkyFloatingLabelTextField-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SkyFloatingLabelTextField";
+			sourceTree = "<group>";
+		};
+		38C1C96BCB78D5886576FF562CD4D1CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2946C0054096832B49F17ED03134A3F /* Pods_Formidable.framework */,
+				3DC4563A06AF9482F4778EA64240CDD2 /* Pods_FormidableTests.framework */,
+				F853A8B64B37DB57D83EBF8956FF32E3 /* Pods_FormidableUITests.framework */,
+				5C1090BA19047F83462B1955304F74A3 /* SkyFloatingLabelTextField.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E538C50B5FBAB3A28B0BDDB5EEAA44A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE06ED5906FCC1C2AA7EDA322B1D832D /* SkyFloatingLabelTextField */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6B7A9F6FB8DDB5AF1463F8D4C1D263D6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C4945C36E73795FBC4C0C2D32DF07C47 /* Pods-Formidable */,
+				BB3A7F479D4DE2EAAAEED96F23813399 /* Pods-FormidableTests */,
+				BDE482258771E5935C372813043A7328 /* Pods-FormidableUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				3E538C50B5FBAB3A28B0BDDB5EEAA44A /* Pods */,
+				38C1C96BCB78D5886576FF562CD4D1CD /* Products */,
+				6B7A9F6FB8DDB5AF1463F8D4C1D263D6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BB3A7F479D4DE2EAAAEED96F23813399 /* Pods-FormidableTests */ = {
+			isa = PBXGroup;
+			children = (
+				41EF479C64A39E65C9955D1023576F14 /* Info.plist */,
+				7ACB07D5F78975321B984F14BE035AC1 /* Pods-FormidableTests.modulemap */,
+				DA3CB4DFC3740EA943ACE4AB5610C776 /* Pods-FormidableTests-acknowledgements.markdown */,
+				57EC568DFD8AC544311E1DBC90EDA609 /* Pods-FormidableTests-acknowledgements.plist */,
+				A66713595C8A1D2821B88209E27D18BF /* Pods-FormidableTests-dummy.m */,
+				8784D29E5E05DCA7A4554E931E8007CB /* Pods-FormidableTests-frameworks.sh */,
+				61E10F0C8C2FCA0570F0C55829362238 /* Pods-FormidableTests-resources.sh */,
+				A205E7D45C26B67613ED49589D27D367 /* Pods-FormidableTests-umbrella.h */,
+				7B0FB0DB6AB6A7DCDA9BA6EF4248F891 /* Pods-FormidableTests.debug.xcconfig */,
+				F7607FC766AEC365647F059020B08288 /* Pods-FormidableTests.release.xcconfig */,
+			);
+			name = "Pods-FormidableTests";
+			path = "Target Support Files/Pods-FormidableTests";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BDE482258771E5935C372813043A7328 /* Pods-FormidableUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AA5072EC79004BAF750FB8E80FE411AD /* Info.plist */,
+				8075BAF4E8F3E301753BBB889BE50EBF /* Pods-FormidableUITests.modulemap */,
+				1315E325FE76C5EF8E4FD720D0816ACB /* Pods-FormidableUITests-acknowledgements.markdown */,
+				9335CD4F583EC8929637AC5645714401 /* Pods-FormidableUITests-acknowledgements.plist */,
+				0FE3CE7A9FC69E31909A2DFDBDD1E725 /* Pods-FormidableUITests-dummy.m */,
+				CD0FC5126A29956996DBC67B32EA81CD /* Pods-FormidableUITests-frameworks.sh */,
+				AC7EF86C80735FAFC10EFBE08AFC8A16 /* Pods-FormidableUITests-resources.sh */,
+				64519B5B3A116188A56CEC8D97077609 /* Pods-FormidableUITests-umbrella.h */,
+				BADC57A4B8A0FD8E5AD8BC69B662A756 /* Pods-FormidableUITests.debug.xcconfig */,
+				596DA882889DAEAA6CA774CF80D8C471 /* Pods-FormidableUITests.release.xcconfig */,
+			);
+			name = "Pods-FormidableUITests";
+			path = "Target Support Files/Pods-FormidableUITests";
+			sourceTree = "<group>";
+		};
+		BE06ED5906FCC1C2AA7EDA322B1D832D /* SkyFloatingLabelTextField */ = {
+			isa = PBXGroup;
+			children = (
+				DC2FD3B444C15779258A1E4254154328 /* SkyFloatingLabelTextField.swift */,
+				18AB6AF7BE4547CE64DE5711633CFFC0 /* SkyFloatingLabelTextFieldWithIcon.swift */,
+				DFEECCA755E56BD7670ACA5B8FDE8C49 /* UITextField+fixCaretPosition.swift */,
+				0C8F83CCEF573C773C34D82C14313BF9 /* Support Files */,
+			);
+			name = SkyFloatingLabelTextField;
+			path = SkyFloatingLabelTextField;
+			sourceTree = "<group>";
+		};
+		C4945C36E73795FBC4C0C2D32DF07C47 /* Pods-Formidable */ = {
+			isa = PBXGroup;
+			children = (
+				10A9D1EE8A97F2F27277493CADA7860B /* Info.plist */,
+				3F206C8F8AA959F081B7E8A138ED3B5D /* Pods-Formidable.modulemap */,
+				7C4AFDD0F89E93714295E587DA9B2807 /* Pods-Formidable-acknowledgements.markdown */,
+				75F6D1D021F9DF8BE6B7391861171CE0 /* Pods-Formidable-acknowledgements.plist */,
+				88CC2ACFCFDE15C173F6B367AC79053E /* Pods-Formidable-dummy.m */,
+				56937A00B69BEAD99F3312023529B582 /* Pods-Formidable-frameworks.sh */,
+				FDA7F985720A79CCBFD8AC825A06D12B /* Pods-Formidable-resources.sh */,
+				A1FA5F32200C957EFCD2612D28224700 /* Pods-Formidable-umbrella.h */,
+				4D7E8690468C251B37E453ACD507CA79 /* Pods-Formidable.debug.xcconfig */,
+				F207ACAB3234054885BFCE6A946895FC /* Pods-Formidable.release.xcconfig */,
+			);
+			name = "Pods-Formidable";
+			path = "Target Support Files/Pods-Formidable";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0DD627604912593D55F1D8929C7594FF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2705FEDC69005A2A7E1E7BB5F7ECA06 /* Pods-FormidableTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27AD19BCF55DB668E44472096630FF43 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04D3992C3E3ABB21025439FB8FFADBB2 /* Pods-FormidableUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF4640F6CECE012C313EC33AF2FEDD8C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5F64F7CC60EE6ECC3C117B22B039C12 /* SkyFloatingLabelTextField-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C29A97CD4035893706427A311BFAC181 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACC1A013EBBC8170D178A88BFE5352CF /* Pods-Formidable-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		09287C4378559B09F75D4DD62AF5E8C8 /* Pods-FormidableUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 107DAF7AA3BDF8DE6562D76130FFC7AE /* Build configuration list for PBXNativeTarget "Pods-FormidableUITests" */;
+			buildPhases = (
+				FBF57551013B7FCE0F834CF3A3516A87 /* Sources */,
+				EBA99EA4B2B96145F72F679812B39806 /* Frameworks */,
+				27AD19BCF55DB668E44472096630FF43 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-FormidableUITests";
+			productName = "Pods-FormidableUITests";
+			productReference = F853A8B64B37DB57D83EBF8956FF32E3 /* Pods_FormidableUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		20F000D10B5B6214BE41E41812378684 /* Pods-FormidableTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47D9A06860256C0B2BAEB97AEAB073C9 /* Build configuration list for PBXNativeTarget "Pods-FormidableTests" */;
+			buildPhases = (
+				4026527389C1DC8971D2BDC6C31DF898 /* Sources */,
+				81E45C512893B7C46DD29DC325C88AC2 /* Frameworks */,
+				0DD627604912593D55F1D8929C7594FF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-FormidableTests";
+			productName = "Pods-FormidableTests";
+			productReference = 3DC4563A06AF9482F4778EA64240CDD2 /* Pods_FormidableTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A7493C9EA4596B1D724BC7901B20EDDD /* SkyFloatingLabelTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E3E93AD530641A061723F15E1277851 /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField" */;
+			buildPhases = (
+				D03B818AAF9F3F06339DF6301758E7D0 /* Sources */,
+				C7D3A22B1ABEB40C0C58B430FEB0C7B7 /* Frameworks */,
+				AF4640F6CECE012C313EC33AF2FEDD8C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkyFloatingLabelTextField;
+			productName = SkyFloatingLabelTextField;
+			productReference = 5C1090BA19047F83462B1955304F74A3 /* SkyFloatingLabelTextField.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D1E91969D7C4E518F40B490D62BCBE8E /* Pods-Formidable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BD0B148D8A9D0ED4CC05601A94DB274 /* Build configuration list for PBXNativeTarget "Pods-Formidable" */;
+			buildPhases = (
+				41CC9037B12CA5ADD0087B1FB493125A /* Sources */,
+				F90DE7FCE7761384FC024A86253BF3D6 /* Frameworks */,
+				C29A97CD4035893706427A311BFAC181 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1476B6360DC92514E2C8198A218E924D /* PBXTargetDependency */,
+			);
+			name = "Pods-Formidable";
+			productName = "Pods-Formidable";
+			productReference = D2946C0054096832B49F17ED03134A3F /* Pods_Formidable.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 38C1C96BCB78D5886576FF562CD4D1CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D1E91969D7C4E518F40B490D62BCBE8E /* Pods-Formidable */,
+				20F000D10B5B6214BE41E41812378684 /* Pods-FormidableTests */,
+				09287C4378559B09F75D4DD62AF5E8C8 /* Pods-FormidableUITests */,
+				A7493C9EA4596B1D724BC7901B20EDDD /* SkyFloatingLabelTextField */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4026527389C1DC8971D2BDC6C31DF898 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3A2304B6B98B9B8A78A6F50EBFBA644 /* Pods-FormidableTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41CC9037B12CA5ADD0087B1FB493125A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15966BE120B4676B5793AB92D702DB7A /* Pods-Formidable-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D03B818AAF9F3F06339DF6301758E7D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6814D5B7DFE0C775938C9EACEA71B4C /* SkyFloatingLabelTextField-dummy.m in Sources */,
+				EAD5C0CD0AADB0470BED2E106396D630 /* SkyFloatingLabelTextField.swift in Sources */,
+				B4FD42E24DE3AA1F1898F67DFDA9CACD /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */,
+				EA39766C0FCB1EF398395FD076B5024A /* UITextField+fixCaretPosition.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBF57551013B7FCE0F834CF3A3516A87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E342F35FB48F1D83B5D60CAFB9BDD0E /* Pods-FormidableUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1476B6360DC92514E2C8198A218E924D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SkyFloatingLabelTextField;
+			target = A7493C9EA4596B1D724BC7901B20EDDD /* SkyFloatingLabelTextField */;
+			targetProxy = 87ECC8222964291C7963AE1D3AF2A8DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3004261E85B495471ECE913936B0DCED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6804FB54F18C5058CCAB97C41F5D7C85 /* SkyFloatingLabelTextField.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SkyFloatingLabelTextField/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SkyFloatingLabelTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		341282E34BBBA1CE249658A14A3A5D70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7607FC766AEC365647F059020B08288 /* Pods-FormidableTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FormidableTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FormidableTests/Pods-FormidableTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FormidableTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		36F999C009E5123E38301BEA68CDE0D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F207ACAB3234054885BFCE6A946895FC /* Pods-Formidable.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Formidable/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Formidable/Pods-Formidable.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Formidable;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5F11811004A69D182723079ABD614300 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6804FB54F18C5058CCAB97C41F5D7C85 /* SkyFloatingLabelTextField.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SkyFloatingLabelTextField/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SkyFloatingLabelTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		673254EEAF0B5BF4596080C749645884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9BF91D9F1329E21E3AA38F5CF1F7B4D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BADC57A4B8A0FD8E5AD8BC69B662A756 /* Pods-FormidableUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FormidableUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FormidableUITests/Pods-FormidableUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FormidableUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AA72969DC7103CF99164FCF6F420E319 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D7E8690468C251B37E453ACD507CA79 /* Pods-Formidable.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Formidable/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Formidable/Pods-Formidable.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Formidable;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B3DD4334CE74A945B2B97740B3539E3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B0FB0DB6AB6A7DCDA9BA6EF4248F891 /* Pods-FormidableTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FormidableTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FormidableTests/Pods-FormidableTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FormidableTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F2F21DF1CAAFA69C548816E58DC59DA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 596DA882889DAEAA6CA774CF80D8C471 /* Pods-FormidableUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FormidableUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FormidableUITests/Pods-FormidableUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FormidableUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0BD0B148D8A9D0ED4CC05601A94DB274 /* Build configuration list for PBXNativeTarget "Pods-Formidable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA72969DC7103CF99164FCF6F420E319 /* Debug */,
+				36F999C009E5123E38301BEA68CDE0D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		107DAF7AA3BDF8DE6562D76130FFC7AE /* Build configuration list for PBXNativeTarget "Pods-FormidableUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BF91D9F1329E21E3AA38F5CF1F7B4D0 /* Debug */,
+				F2F21DF1CAAFA69C548816E58DC59DA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */,
+				673254EEAF0B5BF4596080C749645884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E3E93AD530641A061723F15E1277851 /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3004261E85B495471ECE913936B0DCED /* Debug */,
+				5F11811004A69D182723079ABD614300 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47D9A06860256C0B2BAEB97AEAB073C9 /* Build configuration list for PBXNativeTarget "Pods-FormidableTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3DD4334CE74A945B2B97740B3539E3E /* Debug */,
+				341282E34BBBA1CE249658A14A3A5D70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
