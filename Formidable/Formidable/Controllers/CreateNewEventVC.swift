@@ -8,6 +8,7 @@
 
 import UIKit
 import SkyFloatingLabelTextField
+import CoreData
 
 class CreateNewEventVC: UIViewController,UICollectionViewDataSource, UICollectionViewDelegate, UIPickerViewDataSource,UIPickerViewDelegate,UITextFieldDelegate {
   @IBOutlet weak var txtTitle: SkyFloatingLabelTextField!
@@ -19,7 +20,7 @@ class CreateNewEventVC: UIViewController,UICollectionViewDataSource, UICollectio
   
   @IBOutlet weak var constraintPickerHT: NSLayoutConstraint!
   // declare instance variables
-
+  
   var arrIndexces = [Int]()
   var arrPickerData = [Array<Any>]()
   var strHour = String()
@@ -58,55 +59,68 @@ class CreateNewEventVC: UIViewController,UICollectionViewDataSource, UICollectio
       dictForEvent["title"] = txtTitle.text!
       let sum = arrIndexces[0]+arrIndexces[1]+arrIndexces[2]+arrIndexces[3]+arrIndexces[4]+arrIndexces[5]+arrIndexces[6]
       switch sum
-       {
+      {
       case 127:
-        dictForEvent["days"] = "Eveyday"
+        dictForEvent["days"] = everyday
         print("Eveyday")
       case 31:
         print("WeekDays")
-        dictForEvent["days"] = "WeekDays"
+        dictForEvent["days"] = weekdays
       case 96:
         print("WeekEnds")
-        dictForEvent["days"] = "WeekEnds"
+        dictForEvent["days"] = weekEnds
       default:
         var str = ""
         if arrIndexces[0] != 0
         {
-          str = "Mon"
+          str = monDB
         }
         if arrIndexces[1] != 0
         {
-          str = str + " Tue"
+          str = str + tueDB
         }
         if arrIndexces[2] != 0
         {
-          str = str + " Wed"
+          str = str + wedDB
         }
         if arrIndexces[3] != 0
-         {
-          str = str + " Thu"
+        {
+          str = str + thuDB
         }
         if arrIndexces[4] != 0
         {
-          str = str + " Fri"
+          str = str + friDB
         }
         if arrIndexces[5] != 0
         {
-          str = str + " Sat"
+          str = str + satDB
         }
         if arrIndexces[6] != 0
         {
-          str = str + " Sun"
+          str = str + sunDB
         }
         dictForEvent["days"] = str
       }
-      Events.eventSaving(arrEvent: dictForEvent)
-      //          let alert = UIAlertController(title: "Formidable", message: "Event Created Successfully", preferredStyle: UIAlertControllerStyle.alert)
-      //      alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (alert) in
-      //        self.navigationController!.popViewController(animated: true)
-      //      }))
-      //      self.present(alert, animated: true, completion: nil)
+      let eventClassName :String = String(describing: Events.self) // get db class name
+    
+      let event:Events = NSEntityDescription.insertNewObject(forEntityName: eventClassName, into:   CoreDataHelper.persistentContainer.viewContext) as! Events
+      
+      event.days = dictForEvent["days"] as! String?
+      event.eventId = dictForEvent["eventId"] as! String?
+      event.status = ((dictForEvent["status"] as! String?) != nil)
+      event.desc = dictForEvent["desc"] as! String?
+      event.duration = dictForEvent["duration"] as! String?
+      event.title = dictForEvent["title"] as! String?
+      
+      CoreDataHelper.saveContext()
+          let alert = UIAlertController(title: kAppName, message: kCreateSuccessMsg, preferredStyle: UIAlertControllerStyle.alert)
+          alert.addAction(UIAlertAction(title: ok, style: UIAlertActionStyle.default, handler: popCurrentView))
+          self.present(alert, animated: true, completion: nil)
     }
+  }
+  func popCurrentView(action: UIAlertAction) -> Void
+  {
+   _ = navigationController?.popViewController(animated: true)
   }
   func convertCurrentDateToUTC() -> String
   {
@@ -159,6 +173,8 @@ class CreateNewEventVC: UIViewController,UICollectionViewDataSource, UICollectio
     return true
   }
   
+
+
   // MARK: - UICollectionView Delegates And DataSources -
   
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -206,7 +222,7 @@ class CreateNewEventVC: UIViewController,UICollectionViewDataSource, UICollectio
     }
     else
     {
-      arrIndexces[indexPath.item] = (indexPath.item * 2 == 0 ? 1 : indexPath.item * 2 )
+      arrIndexces[indexPath.item] = (indexPath.item * 2 == 0 ? 1 :   2 ^^ indexPath.row)
       btnWeek.isSelected = true
       btnWeek.layer.backgroundColor = UIColor.red.cgColor
     }
@@ -266,4 +282,10 @@ class CreateNewEventVC: UIViewController,UICollectionViewDataSource, UICollectio
   //  {
   //
   //  }
+}
+
+precedencegroup PowerPrecedence { higherThan: MultiplicationPrecedence }
+infix operator ^^ : PowerPrecedence
+func ^^ (radix: Int, power: Int) -> Int {
+  return Int(pow(Double(radix), Double(power)))
 }

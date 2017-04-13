@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		23CC8348CA0DE3A7C3D02421 /* Pods_FormidableUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E1E97920BE68A20C889A18C /* Pods_FormidableUITests.framework */; };
+		650772081E9F53050016C7B6 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650772071E9F53050016C7B6 /* Constant.swift */; };
 		651EC9E01E62262400E6A186 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651EC9DE1E62262400E6A186 /* FirstViewController.swift */; };
 		651EC9E11E62262400E6A186 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651EC9DF1E62262400E6A186 /* SecondViewController.swift */; };
 		651EC9E31E62263D00E6A186 /* CreateNewEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651EC9E21E62263D00E6A186 /* CreateNewEventVC.swift */; };
@@ -49,6 +50,7 @@
 /* Begin PBXFileReference section */
 		2154B0A31433FBE1A37D6128 /* Pods-FormidableTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FormidableTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FormidableTests/Pods-FormidableTests.release.xcconfig"; sourceTree = "<group>"; };
 		5E9604D5D45C0AA4641ED4DF /* Pods-Formidable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Formidable.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Formidable/Pods-Formidable.debug.xcconfig"; sourceTree = "<group>"; };
+		650772071E9F53050016C7B6 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = SupportFiles/Constant.swift; sourceTree = "<group>"; };
 		651EC9DE1E62262400E6A186 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirstViewController.swift; path = Controllers/FirstViewController.swift; sourceTree = "<group>"; };
 		651EC9DF1E62262400E6A186 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = Controllers/SecondViewController.swift; sourceTree = "<group>"; };
 		651EC9E21E62263D00E6A186 /* CreateNewEventVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateNewEventVC.swift; path = Controllers/CreateNewEventVC.swift; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				655A44561E6B3099001F8C26 /* CoreDataHelper.swift */,
+				650772071E9F53050016C7B6 /* Constant.swift */,
 				6556048D1E680F4E00436F8C /* Shared.swift */,
 			);
 			name = SupportFiles;
@@ -545,6 +548,7 @@
 				65FFA42C1E63045B00199117 /* Events+CoreDataProperties.swift in Sources */,
 				651EC9E01E62262400E6A186 /* FirstViewController.swift in Sources */,
 				6556048E1E680F4E00436F8C /* Shared.swift in Sources */,
+				650772081E9F53050016C7B6 /* Constant.swift in Sources */,
 				651EC9E31E62263D00E6A186 /* CreateNewEventVC.swift in Sources */,
 				655604891E680E1B00436F8C /* ErrorView.swift in Sources */,
 			);
@@ -702,6 +706,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5E9604D5D45C0AA4641ED4DF /* Pods-Formidable.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEVELOPMENT_TEAM = B2KZPMR7GT;
@@ -718,6 +723,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B2D223390D0D75223C071A48 /* Pods-Formidable.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEVELOPMENT_TEAM = B2KZPMR7GT;

@@ -7,22 +7,24 @@
 //
 
 import UIKit
+import CoreData
+
+
 
 class FirstViewController: UIViewController , UITableViewDelegate,UITableViewDataSource{
   
-  var arrEvent = [String]();
+  var arrEvent = [AnyObject]();
   var arrDaysOfWeek = [String]();
   var sectionIndex:Int = -1
-  
-  
+  var dictDaysData = [String:Array<AnyObject>]()
+  var arrTempData = [AnyObject]();
   
   @IBOutlet weak var tblEvent: UITableView!
   //MARK:  - View LifeCycle Methods -
   override func viewDidLoad()
   {
     super.viewDidLoad()
-    arrEvent = ["hello","hii"];
-    arrDaysOfWeek = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+    arrDaysOfWeek = [sun,mon,tue,wed,thu,fri,sat]
     var arrTemp = [String]()
     var weekIndex = self.getDayOfWeek()
     if  weekIndex != 0
@@ -37,41 +39,119 @@ class FirstViewController: UIViewController , UITableViewDelegate,UITableViewDat
       self.arrDaysOfWeek = arrTemp
     }
   }
+  override func viewWillAppear(_ animated: Bool)
+  {
+    super.viewWillAppear(true)
+    
+    // delclaring the weeks data
+    dictDaysData = [sun :[] ,mon:[],tue:[],wed:[],thu:[],fri:[],sat:[]]
+    let fetchRequest : NSFetchRequest<Events> = Events.fetchRequest()
+    do
+    {
+      let searchResults = try CoreDataHelper.getContext().fetch(fetchRequest)
+      print("number of resuls:\(searchResults.count)")
+      arrEvent = searchResults
+      //      for result in searchResults as [Events]
+      //      {
+      //        print("\(result.title!) \(result.desc!) is \(result.duration) ")
+      //      }
+    }
+    catch
+    {
+      print("Error:\(error)")
+    }
+    if arrEvent.count > 0
+    {
+      var index = 0
+      for event in arrEvent as! [Events]
+      {
+        switch event.days!
+        {
+        case weekdays:
+          dictDaysData[mon]?.append(index as AnyObject)
+          dictDaysData[tue]?.append(index as AnyObject)
+          dictDaysData[wed]?.append(index as AnyObject)
+          dictDaysData[thu]?.append(index as AnyObject)
+          dictDaysData[fri]?.append(index as AnyObject)
+          break
+        case weekEnds:
+          dictDaysData[sat]?.append(index as AnyObject)
+          dictDaysData[sun]?.append(index as AnyObject)
+        case everyday:
+          dictDaysData[mon]?.append(index as AnyObject)
+          dictDaysData[tue]?.append(index as AnyObject)
+          dictDaysData[wed]?.append(index as AnyObject)
+          dictDaysData[thu]?.append(index as AnyObject)
+          dictDaysData[fri]?.append(index as AnyObject)
+          dictDaysData[sat]?.append(index as AnyObject)
+          dictDaysData[sun]?.append(index as AnyObject)
+        default:
+          // means some in between days are selected
+          if (event.days?.contains(sunDB))!
+          {
+            dictDaysData[sun]?.append(index as AnyObject)
+          }
+          if (event.days?.contains(monDB))!
+          {
+            dictDaysData[mon]?.append(index as AnyObject)
+          }
+          if (event.days?.contains(tueDB))!
+          {
+            dictDaysData[tue]?.append(index as AnyObject)
+          }
+          if (event.days?.contains(wedDB))!
+          {
+            dictDaysData[wed]?.append(index as AnyObject)
+          }
+          if (event.days?.contains(thuDB))!
+          {
+            dictDaysData[thu]?.append(index as AnyObject)
+          }
+          if (event.days?.contains(friDB))!
+          {
+            dictDaysData[fri]?.append(index as AnyObject)
+          }
+          if (event.days?.contains(satDB))!
+          {
+            dictDaysData[sat]?.append(index as AnyObject)
+          }
+        }
+        index += 1
+      }
+      print(dictDaysData)
+    }
+  }
   
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
   }
   
-  
   //MARK:  -  IBAction Methods -
-  
   func tapToCreateEvent() -> Void
   {
     let storybord = UIStoryboard.init(name: "Main", bundle: nil);
     let createViewC = storybord.instantiateViewController(withIdentifier:"CreateNewEventVC" )
     self.navigationController?.pushViewController(createViewC, animated: true)
-    //  CreateNewEventVC
-    //    let alert = UIAlertController(title: "Formidable", message: "Teddu kutta h , press ok if you agree ;)", preferredStyle: UIAlertControllerStyle.alert)
-    //    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-    //    self.present(alert, animated: true, completion: nil)
-    //    print("sdjkfghjkdhg lldf ghskjfdgh kjsfgh kjgh klsdjghdksjfg dfshg klsdgh");
   }
   
   func tapToExpand(sender:UIButton) -> Void
   {
-    if sectionIndex != -1
+    if sectionIndex != -1 && sectionIndex != sender.tag // collaps previous section or current one
     {
-      tblEvent.reloadSections(NSIndexSet(index: sectionIndex) as IndexSet, with: UITableViewRowAnimation.fade)
+      let indexForSec = sectionIndex
+      sectionIndex = -1
+      tblEvent.reloadSections(NSIndexSet(index: indexForSec) as IndexSet, with: UITableViewRowAnimation.fade)
     }
-    sectionIndex = (sectionIndex == sender.tag) ? -1 : sender.tag
+    sectionIndex =  sectionIndex != sender.tag ? sender.tag : -1
     sender.setImage(#imageLiteral(resourceName: "Expand"), for: .normal)
-    //    tblEvent.reloadData()
-    
+    arrTempData = sectionIndex != -1 ? dictDaysData[arrDaysOfWeek[sectionIndex]]! : [AnyObject]()
+    print(arrTempData)
     tblEvent.reloadSections(NSIndexSet(index: sender.tag) as IndexSet, with: UITableViewRowAnimation.fade)
-    //     tblEvent.reloadSections(NSIndexSet(index: sender.tag) as IndexSet, with: UITableViewRowAnimation.automatic)
   }
+  
   // MARK: - Internal Helper Methods -
+  
   func getDayOfWeek()->Int {
     
     let myCalendar = NSCalendar(calendarIdentifier: NSCalendar.Identifier.gregorian)!
@@ -84,16 +164,20 @@ class FirstViewController: UIViewController , UITableViewDelegate,UITableViewDat
   
   func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat
   {
-    return section == 7 ? 0 :  40
+    return section == weekDays ? 0 :  40
   }
   
   func numberOfSections(in tableView: UITableView) -> Int
   {
-    return 7;
+    return weekDays + 1;
   }
   func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView?
   {
     let view = UIView.init(frame: CGRect(x: 0, y: 0, width: tblEvent.frame.size.width, height: 40))
+    if section == 7
+    {
+      return view;
+    }
     view.backgroundColor = UIColor.groupTableViewBackground
     let lblTitle = UILabel.init(frame: CGRect(x: 10, y: 0, width: view.frame.size.width-10, height:40))
     lblTitle.text = arrDaysOfWeek[section]
@@ -101,9 +185,10 @@ class FirstViewController: UIViewController , UITableViewDelegate,UITableViewDat
     let lblSep = UILabel.init(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height:1))
     lblSep.backgroundColor = UIColor.lightGray
     
-    let button = UIButton.init(frame: CGRect(x: view.frame.size.width - 60, y: 0, width: 40, height: 40))
+    let button = UIButton.init(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width - 10, height: 40))
     button.tag = section
     button.setTitleColor(UIColor .black, for: .normal)
+    button.imageEdgeInsets = UIEdgeInsets(top: 0, left: UIScreen.main.bounds.width - 60, bottom: 0, right: 0)
     if sectionIndex == section
     {
       button.setImage(#imageLiteral(resourceName: "Collapse"), for: .normal)
@@ -111,8 +196,8 @@ class FirstViewController: UIViewController , UITableViewDelegate,UITableViewDat
     else
     {
       button.setImage(#imageLiteral(resourceName: "Expand"), for: .normal)
-      
     }
+    
     button.addTarget(self, action: #selector(FirstViewController.tapToExpand(sender:)), for: .touchUpInside)
     view.addSubview(button)
     view.addSubview(lblTitle)
@@ -122,13 +207,13 @@ class FirstViewController: UIViewController , UITableViewDelegate,UITableViewDat
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
   {
-    if (sectionIndex == -1 && section == 7)
+    if (section == weekDays)
     {
       return 1
     }
     else if sectionIndex == section
     {
-      return  arrEvent.count   //count number of row from counting array hear cataGorry is An Array
+      return  arrTempData.count
     }
     return 0
   }
@@ -150,7 +235,7 @@ class FirstViewController: UIViewController , UITableViewDelegate,UITableViewDat
     imgView.isHidden = false;
     lblTitle.isHidden = false
     
-    if indexPath.section == 7
+    if indexPath.section == weekDays
     {
       btnAdd.isHidden = false
       lblDuration.isHidden = true;
@@ -165,12 +250,14 @@ class FirstViewController: UIViewController , UITableViewDelegate,UITableViewDat
       btnAdd.addTarget(self, action: #selector(FirstViewController.tapToCreateEvent), for: UIControlEvents.touchUpInside)
       return cell
     }
+    print(arrTempData[indexPath.row] as! Int)
+    let event:Events = arrEvent[arrTempData[indexPath.row] as! Int] as! Events;
     
-    lblTitle.text = "Event Title"
-    lblEventDes.text = "This event is a simple testing event that has been created to show how actual view will look like after creating an event."
-    lblDuration.text = "duration 3 hours 31 mins"
-    lblWeekDay.text  = indexPath.row == 0 ?  "Mon Tue Wed" : "Everyday"
-    imgView.image =  indexPath.row == 0 ?  #imageLiteral(resourceName: "first") :  #imageLiteral(resourceName: "Sphere")
+    lblTitle.text = event.title // "Event Title"
+    lblEventDes.text =  event.desc
+    lblDuration.text = "duration " + event.duration! + "min(s)"
+    lblWeekDay.text  = event.days
+    imgView.image =  indexPath.row == 0 ?  #imageLiteral(resourceName: "InCompleteEvent") :  #imageLiteral(resourceName: "CompledEvent")
     tableView.allowsSelection = false;
     return cell
   }
@@ -192,7 +279,7 @@ class FirstViewController: UIViewController , UITableViewDelegate,UITableViewDat
   
   func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
     
-    return indexPath.section == 7 ? false : true
+    return indexPath.section == weekDays ? false : true
   }
   
   func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {

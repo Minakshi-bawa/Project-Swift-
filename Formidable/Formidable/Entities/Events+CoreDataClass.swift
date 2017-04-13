@@ -1,15 +1,13 @@
 //
 //  Events+CoreDataClass.swift
-//  Formidable
+//  
 //
-//  Created by Minakshi Bawa on 26/02/17.
-//  Copyright © 2017 Shashi. All rights reserved.
+//  Created by Minakshi Bawa on 11/04/17.
+//
 //
 
 import Foundation
 import CoreData
-
-
 
 @objc(Events)
 public class Events: NSManagedObject {
