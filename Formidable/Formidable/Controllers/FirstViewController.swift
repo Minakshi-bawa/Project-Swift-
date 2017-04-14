@@ -42,7 +42,49 @@ class FirstViewController: UIViewController , UITableViewDelegate,UITableViewDat
   override func viewWillAppear(_ animated: Bool)
   {
     super.viewWillAppear(true)
+    fetchAndSortData()
+   }
+  
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
+  }
+  
+  //MARK:  -  IBAction Methods -
+  func tapToCreateEvent() -> Void
+  {
+    let storybord = UIStoryboard.init(name: "Main", bundle: nil);
+    let createViewC = storybord.instantiateViewController(withIdentifier:"CreateNewEventVC" )
+    self.navigationController?.pushViewController(createViewC, animated: true)
+  }
+  
+  func tapToExpand(sender:UIButton) -> Void
+  {
+    if sectionIndex != -1 && sectionIndex != sender.tag // collaps previous section or current one
+    {
+      let indexForSec = sectionIndex
+      sectionIndex = -1
+      tblEvent.reloadSections(NSIndexSet(index: indexForSec) as IndexSet, with: UITableViewRowAnimation.fade)
+    }
+    sectionIndex =  sectionIndex != sender.tag ? sender.tag : -1
+    sender.setImage(#imageLiteral(resourceName: "Expand"), for: .normal)
+    arrTempData = sectionIndex != -1 ? dictDaysData[arrDaysOfWeek[sectionIndex]]! : [AnyObject]()
+    print(arrTempData)
+    tblEvent.reloadSections(NSIndexSet(index: sender.tag) as IndexSet, with: UITableViewRowAnimation.fade)
+  }
+  
+  // MARK: - Internal Helper Methods -
+  
+  func getDayOfWeek()->Int {
     
+    let myCalendar = NSCalendar(calendarIdentifier: NSCalendar.Identifier.gregorian)!
+    let myComponents = myCalendar.components(.weekday, from: Date())
+    let weekDay = (myComponents.weekday)! - 1
+    return weekDay
+  }
+  
+  func fetchAndSortData()
+  {
     // delclaring the weeks data
     dictDaysData = [sun :[] ,mon:[],tue:[],wed:[],thu:[],fri:[],sat:[]]
     let fetchRequest : NSFetchRequest<Events> = Events.fetchRequest()
@@ -120,46 +162,8 @@ class FirstViewController: UIViewController , UITableViewDelegate,UITableViewDat
       }
       print(dictDaysData)
     }
+
   }
-  
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-  }
-  
-  //MARK:  -  IBAction Methods -
-  func tapToCreateEvent() -> Void
-  {
-    let storybord = UIStoryboard.init(name: "Main", bundle: nil);
-    let createViewC = storybord.instantiateViewController(withIdentifier:"CreateNewEventVC" )
-    self.navigationController?.pushViewController(createViewC, animated: true)
-  }
-  
-  func tapToExpand(sender:UIButton) -> Void
-  {
-    if sectionIndex != -1 && sectionIndex != sender.tag // collaps previous section or current one
-    {
-      let indexForSec = sectionIndex
-      sectionIndex = -1
-      tblEvent.reloadSections(NSIndexSet(index: indexForSec) as IndexSet, with: UITableViewRowAnimation.fade)
-    }
-    sectionIndex =  sectionIndex != sender.tag ? sender.tag : -1
-    sender.setImage(#imageLiteral(resourceName: "Expand"), for: .normal)
-    arrTempData = sectionIndex != -1 ? dictDaysData[arrDaysOfWeek[sectionIndex]]! : [AnyObject]()
-    print(arrTempData)
-    tblEvent.reloadSections(NSIndexSet(index: sender.tag) as IndexSet, with: UITableViewRowAnimation.fade)
-  }
-  
-  // MARK: - Internal Helper Methods -
-  
-  func getDayOfWeek()->Int {
-    
-    let myCalendar = NSCalendar(calendarIdentifier: NSCalendar.Identifier.gregorian)!
-    let myComponents = myCalendar.components(.weekday, from: Date())
-    let weekDay = (myComponents.weekday)! - 1
-    return weekDay
-  }
-  
   //MARK:  - UITableView Delegates And DataSources -
   
   func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat
@@ -251,6 +255,7 @@ class FirstViewController: UIViewController , UITableViewDelegate,UITableViewDat
       return cell
     }
     print(arrTempData[indexPath.row] as! Int)
+    // getting event from arrEvent with index from arrTemp
     let event:Events = arrEvent[arrTempData[indexPath.row] as! Int] as! Events;
     
     lblTitle.text = event.title // "Event Title"
@@ -286,6 +291,13 @@ class FirstViewController: UIViewController , UITableViewDelegate,UITableViewDat
     if (editingStyle == UITableViewCellEditingStyle.delete)
     {
       tblEvent.reloadData()
+      let event:Events = arrEvent[arrTempData[indexPath.row] as! Int] as! Events;
+        CoreDataHelper.getContext().delete(event)
+        arrEvent.remove(at:arrTempData[indexPath.row] as! Int )
+        arrTempData.remove(at:indexPath.row)
+           fetchAndSortData()
+        CoreDataHelper.saveContext()
+         tblEvent.reloadData()
       //      if (editingStyle == UITableViewCellEditingStyleDelete) {
       //        [self.toDoItem removeObjectAtIndex:indexPath.row];
       //

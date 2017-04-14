@@ -79,7 +79,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="66" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="31W-uC-qE7">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="66" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="31W-uC-qE7">
                                 <rect key="frame" x="0.0" y="80" width="375" height="538"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -87,17 +87,17 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="66"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="W9y-dl-2UT" id="wGP-e0-6OG">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="66"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button hidden="YES" opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0mR-fe-GkM">
-                                                    <rect key="frame" x="18" y="0.0" width="73" height="47"/>
+                                                <button hidden="YES" opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0mR-fe-GkM">
+                                                    <rect key="frame" x="18" y="0.0" width="337" height="47"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="73" id="irf-vG-Re7"/>
+                                                        <constraint firstAttribute="width" constant="337" id="irf-vG-Re7"/>
                                                         <constraint firstAttribute="height" constant="47" id="lbI-2z-GuD"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <state key="normal" title="Add Event">
+                                                    <state key="normal" title="    Add Event">
                                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                 </button>
@@ -123,21 +123,21 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="17" id="5l4-Ov-NIV"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I have created an I have created an I have created an I have created an I have created an " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDq-TA-N5v">
-                                                    <rect key="frame" x="32" y="36" width="335" height="20"/>
+                                                    <rect key="frame" x="32" y="36" width="335" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="103" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration 13 hours 45 mins" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zn-Jb-VfC">
-                                                    <rect key="frame" x="242" y="3" width="133" height="10"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="103" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration 13 hours 45 mins" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zn-Jb-VfC">
+                                                    <rect key="frame" x="232" y="3" width="135" height="10"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="10" id="WQI-Au-88Q"/>
-                                                        <constraint firstAttribute="width" constant="133" id="f1Z-hg-Bhe"/>
+                                                        <constraint firstAttribute="width" constant="135" id="f1Z-hg-Bhe"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -162,7 +162,7 @@
                                         </tableViewCellContentView>
                                         <constraints>
                                             <constraint firstItem="5zn-Jb-VfC" firstAttribute="top" secondItem="W9y-dl-2UT" secondAttribute="top" constant="3" id="38L-0T-k7Q"/>
-                                            <constraint firstAttribute="trailing" secondItem="5zn-Jb-VfC" secondAttribute="trailing" id="D0q-8o-2Ix"/>
+                                            <constraint firstAttribute="trailing" secondItem="5zn-Jb-VfC" secondAttribute="trailing" constant="8" id="D0q-8o-2Ix"/>
                                         </constraints>
                                     </tableViewCell>
                                 </prototypes>
